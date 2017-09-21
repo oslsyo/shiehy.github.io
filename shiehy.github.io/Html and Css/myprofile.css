@@ -1,0 +1,15 @@
+.my-photo { 
+    /* The image used */
+    background-image: url("https://coderinyou.github.io/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.my-photo, html {
+    min-height: 100%;
+
+
+}
+
+    
