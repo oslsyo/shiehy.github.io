@@ -13,7 +13,7 @@ var student_2 = "bravo"
 
 // values should be, you and your peer.
 
-var welcome_msg = "Hai. We are friends.. " +  student_1 + " , " + student_2
+var welcome_msg = "Hai. We are friends.. " + student_1 + " , " + student_2
 console.log(welcome_msg)
 
 // 1.   Create a new variable "dog" and assign to it with the value "Puggy"
@@ -39,8 +39,8 @@ console.log(dog);
 // 3.2	Use the keyword "typeof" to find out the value's type and assign it to "dogType"
 // 3.3	Print dogType on your console
 // WRITE THE CODE FOR STEP 3 BELOW THIS LINE:
-var dogType = typeof(dog);
-console.log( dogType );
+var dogType = typeof (dog);
+console.log(dogType);
 
 // WRITE YOUR CODE ABOVE THIS LINE
 // 4.		Create a new variable "goodBoy" and assign to it a value of true
@@ -99,7 +99,7 @@ var goodBoy = true;
 // 5.3    Print goodBoy and goodBoyType on your console
 // WRITE THE CODE FOR STEP 5 BELOW THIS LINE:
 
-var goodBoyType = typeof(goodBoy)
+var goodBoyType = typeof (goodBoy)
 console.log(goodBoy)
 console.log(goodBoyType)
 
@@ -121,7 +121,7 @@ var treats = 5;
 // 7.2    Use the keyword "typeof" to find out the value's type and assign it to treatsType
 // 7.3    Print treats and treatsType on your console
 // WRITE THE CODE FOR STEP 5 BELOW THIS LINE:
-var treatsType = typeof(treats)
+var treatsType = typeof (treats)
 console.log(treats)
 console.log(treatsType)
 
@@ -137,7 +137,7 @@ var i = 10;
 // 1.1  Increment using the "++" operator
 // 1.2  Print the code 
 // WRITE THE CODE FOR STEP 1 BELOW THIS LINE:
-console.log( i++ )
+console.log(i++)
 
 
 
@@ -166,20 +166,20 @@ console.log(i)
 // WRITE YOUR CODE ABOVE THIS LINE
 
 function greet(nameOfPerson) {
-    
-        var greeting_message = "Welcome , Mr " + nameOfPerson
-    
-        console.log( greeting_message )
-    }
-    
-    greet( "Bala " )
-    
-    greet( "Zin min" )
-    
-    greet( "Kenneth" )
-    
 
-    /*
+    var greeting_message = "Welcome , Mr " + nameOfPerson
+
+    console.log(greeting_message)
+}
+
+greet("Bala ")
+
+greet("Zin min")
+
+greet("Kenneth")
+
+
+/*
 
 1. Create a function which takes two inputs (names)
 2. inside that function , concatenate those two inputs  using + operator
@@ -195,9 +195,9 @@ It should look like this.
 If i pass "bala" and "ken" as inputs to the funtion, it should return 
 "Bala Bala | Ken Ken"
 
-*/ 
-    
-function joinNames( name1, name2) { 
+*/
+
+function joinNames(name1, name2) {
     //This function is going to join two names (name1, name2)
     // It is going to return the joined_string in the following format
     //Returns : "name1 name 2"
@@ -205,21 +205,67 @@ function joinNames( name1, name2) {
     var joined_string = name1 + name2
     return joined_string
 }
-    var result
-        joinNames("Bala","Ken")
+var result
+joinNames("Bala", "Ken")
 
 
-        //90-70
-        var a = 90;
-        while (a > 69) {
-            console.log(a)
-            a--
-        }
-        
-        for (var a = 90; a > 69;  a--) {
-            console.log(a)
-        }
-        
-        for (var item in [1,2,3]) {
-            console.log(item)
-        }
+//90-70
+var a = 90;
+while (a > 69) {
+    console.log(a)
+    a--
+}
+
+for (var a = 90; a > 69; a--) {
+    console.log(a)
+}
+
+for (var item in [1, 2, 3]) {
+    console.log(item)
+}
+
+
+// Objects
+var studentObject = {
+    name: "Ken"
+    age: 20,
+    marks: [80, 89, 67, 90, 100]
+    subjects: ["Math", "CS", "EC", "Math2", "Math3"],
+    avg: 0,
+    young: false,
+    welcome_function: function () {
+        console.log("Welcome Bala Bala Bala..")
+
+    }
+    bmi: {
+        height: 200,
+        weight: 70
+    }
+}
+
+//Access the value of name "property" from student object??
+console.log(student.name)
+
+//method 1
+student.avg = 70
+var mymarks_list = student.marks
+
+
+
+var total = 0
+for (var num in mymarks_list) {}
+total = total + num
+
+//method 2
+for (var index = 0; index < mymarks_list.length; index++) {
+    varnum = mymarks_list[index];
+    total = total + num
+
+}
+
+//method 3
+var index = 0
+while (index < mymarks_list.length) {
+    total = total + mymarks_list[index]
+    index++
+}

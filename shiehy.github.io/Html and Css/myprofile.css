@@ -1,15 +1,25 @@
-.my-photo { 
-    /* The image used */
-    background-image: url("https://coderinyou.github.io/images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-}
+        .my-photo {
+        /* The image used */
+        background-image: url("https://coderinyou.github.io/images/background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-.my-photo, html {
-    min-height: 100%;
+    h1 {
+        color: #F12C6E;
+    }
 
+    .my-hr {
+        max-width: 40px;
+        min-height: 20px;
+        background-color: #F12C6E;
+    }
 
-}
+    hr {
+        color: #F12C6E1;
+        background-color:#F12C6E;
+    }
 
-    
+    .my-button {
+        background-color: orangered;
